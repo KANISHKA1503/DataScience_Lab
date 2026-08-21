@@ -1,0 +1,2206 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='80798310bd67c7741dfd0d208b4d965ff0b589b9a0d6d94e036b11e3ca1ce23a' _.fcp.WorkbookFingerprinting.true...creator-author-id='80798310bd67c7741dfd0d208b4d965ff0b589b9a0d6d94e036b11e3ca1ce23a' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='80798310bd67c7741dfd0d208b4d965ff0b589b9a0d6d94e036b11e3ca1ce23a' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='80798310bd67c7741dfd0d208b4d965ff0b589b9a0d6d94e036b11e3ca1ce23a' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Q09_learner_activity_cleaned' inline='true' name='federated.0yi2jn007c1rgh133fgfw155lo9q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Q09_learner_activity_cleaned' name='textscan.1nlev9t17xtguu1a6a3mh0haykee'>
+            <connection class='textscan' directory='C:/Users/Kanishka/Downloads' filename='Q09_learner_activity_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1nlev9t17xtguu1a6a3mh0haykee' name='Q09_learner_activity_cleaned.csv' table='[Q09_learner_activity_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='enrolment_id' ordinal='0' />
+            <column datatype='integer' name='course_length_weeks' ordinal='1' />
+            <column datatype='real' name='quiz_score' ordinal='2' />
+            <column datatype='real' name='login_frequency' ordinal='3' />
+            <column datatype='real' name='progress_percent' ordinal='4' />
+            <column datatype='string' name='completion_status' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>enrolment_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[enrolment_id]</local-name>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias>enrolment_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>course_length_weeks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[course_length_weeks]</local-name>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias>course_length_weeks</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quiz_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[quiz_score]</local-name>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias>quiz_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>login_frequency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[login_frequency]</local-name>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias>login_frequency</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>progress_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[progress_percent]</local-name>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias>progress_percent</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completion_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[completion_status]</local-name>
+            <parent-name>[Q09_learner_activity_cleaned.csv]</parent-name>
+            <remote-alias>completion_status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Quiz Score (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[quiz_score]' peg='0' size='5.44' />
+      </column>
+      <column caption='Q09_learner_activity_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]' role='measure' type='quantitative' />
+      <column caption='Completion Status' datatype='string' name='[completion_status]' role='dimension' type='nominal' />
+      <column caption='Course Length Weeks' datatype='integer' name='[course_length_weeks]' role='measure' type='quantitative' />
+      <column caption='Enrolment Id' datatype='string' name='[enrolment_id]' role='dimension' type='nominal' />
+      <column caption='Login Frequency' datatype='real' name='[login_frequency]' role='measure' type='quantitative' />
+      <column caption='Progress Percent' datatype='real' name='[progress_percent]' role='measure' type='quantitative' />
+      <column caption='Quiz Score' datatype='real' name='[quiz_score]' role='measure' type='quantitative' />
+      <column-instance column='[progress_percent]' derivation='Avg' name='[avg:progress_percent:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[enrolment_id]' derivation='Count' name='[cnt:enrolment_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[course_length_weeks]' derivation='Sum' name='[sum:course_length_weeks:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Kanishka/AppData/Local/Temp/TableauTemp/#TableauTemp_05hcmjq0z9bhj81ajh96i1r0qi56.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2026 09:03:22 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>enrolment_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[enrolment_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>enrolment_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Q09_learner_activity_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>course_length_weeks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[course_length_weeks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>course_length_weeks</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Q09_learner_activity_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quiz_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[quiz_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quiz_score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Q09_learner_activity_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>login_frequency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[login_frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>login_frequency</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Q09_learner_activity_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>progress_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[progress_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>progress_percent</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Q09_learner_activity_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completion_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[completion_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completion_status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Q09_learner_activity_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0yi2jn007c1rgh133fgfw155lo9q].[avg:progress_percent:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0yi2jn007c1rgh133fgfw155lo9q]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0yi2jn007c1rgh133fgfw155lo9q].[cnt:enrolment_id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Q09_learner_activity_cleaned.csv' id='Q09_learner_activity_cleaned.csv_250BD0526279497E97091FAB3137EF95'>
+            <properties context=''>
+              <relation connection='textscan.1nlev9t17xtguu1a6a3mh0haykee' name='Q09_learner_activity_cleaned.csv' table='[Q09_learner_activity_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='enrolment_id' ordinal='0' />
+                  <column datatype='integer' name='course_length_weeks' ordinal='1' />
+                  <column datatype='real' name='quiz_score' ordinal='2' />
+                  <column datatype='real' name='login_frequency' ordinal='3' />
+                  <column datatype='real' name='progress_percent' ordinal='4' />
+                  <column datatype='string' name='completion_status' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Progress by Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q09_learner_activity_cleaned' name='federated.0yi2jn007c1rgh133fgfw155lo9q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yi2jn007c1rgh133fgfw155lo9q'>
+            <column-instance column='[enrolment_id]' derivation='Count' name='[cnt:enrolment_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Completion Status' datatype='string' name='[completion_status]' role='dimension' type='nominal' />
+            <column caption='Enrolment Id' datatype='string' name='[enrolment_id]' role='dimension' type='nominal' />
+            <column-instance column='[completion_status]' derivation='None' name='[none:completion_status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' />
+              <wedge-size column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[cnt:enrolment_id:qk]' />
+              <text column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[cnt:enrolment_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{65BB83C2-E4E6-455B-95C8-7BDB8A6BC40B}' />
+    </worksheet>
+    <worksheet name='Completion Status distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q09_learner_activity_cleaned' name='federated.0yi2jn007c1rgh133fgfw155lo9q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yi2jn007c1rgh133fgfw155lo9q'>
+            <column-instance column='[enrolment_id]' derivation='Count' name='[cnt:enrolment_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Completion Status' datatype='string' name='[completion_status]' role='dimension' type='nominal' />
+            <column caption='Enrolment Id' datatype='string' name='[enrolment_id]' role='dimension' type='nominal' />
+            <column-instance column='[completion_status]' derivation='None' name='[none:completion_status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yi2jn007c1rgh133fgfw155lo9q].[cnt:enrolment_id:qk]</rows>
+        <cols>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</cols>
+      </table>
+      <simple-id uuid='{780E5159-23FC-4AFF-A886-7D7768C4FC29}' />
+    </worksheet>
+    <worksheet name='Histogram of Quiz Scores'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q09_learner_activity_cleaned' name='federated.0yi2jn007c1rgh133fgfw155lo9q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yi2jn007c1rgh133fgfw155lo9q'>
+            <column datatype='integer' name='[Quiz Score (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[quiz_score]' peg='0' size='5.44' />
+            </column>
+            <column-instance column='[quiz_score]' derivation='Count' name='[cnt:quiz_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quiz Score (bin)]' derivation='None' name='[none:Quiz Score (bin):qk]' pivot='key' type='quantitative' />
+            <column caption='Quiz Score' datatype='real' name='[quiz_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0yi2jn007c1rgh133fgfw155lo9q].[cnt:quiz_score:qk]</rows>
+        <cols>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:Quiz Score (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:Quiz Score (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{00AD6A0C-DB66-4748-96A5-6C2F0E9C802F}' />
+    </worksheet>
+    <worksheet name='Login Frequency vs Progress Percent'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q09_learner_activity_cleaned' name='federated.0yi2jn007c1rgh133fgfw155lo9q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yi2jn007c1rgh133fgfw155lo9q'>
+            <column caption='Completion Status' datatype='string' name='[completion_status]' role='dimension' type='nominal' />
+            <column caption='Enrolment Id' datatype='string' name='[enrolment_id]' role='dimension' type='nominal' />
+            <column caption='Login Frequency' datatype='real' name='[login_frequency]' role='measure' type='quantitative' />
+            <column-instance column='[completion_status]' derivation='None' name='[none:completion_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[enrolment_id]' derivation='None' name='[none:enrolment_id:nk]' pivot='key' type='nominal' />
+            <column caption='Progress Percent' datatype='real' name='[progress_percent]' role='measure' type='quantitative' />
+            <column-instance column='[login_frequency]' derivation='Sum' name='[sum:login_frequency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[progress_percent]' derivation='Sum' name='[sum:progress_percent:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' />
+              <lod column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</rows>
+        <cols>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</cols>
+      </table>
+      <simple-id uuid='{A8FF0A07-7CB0-4824-B07C-7890EEB1FF9C}' />
+    </worksheet>
+    <worksheet name='Quiz Score Distribution by Completion Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q09_learner_activity_cleaned' name='federated.0yi2jn007c1rgh133fgfw155lo9q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yi2jn007c1rgh133fgfw155lo9q'>
+            <column caption='Completion Status' datatype='string' name='[completion_status]' role='dimension' type='nominal' />
+            <column caption='Enrolment Id' datatype='string' name='[enrolment_id]' role='dimension' type='nominal' />
+            <column-instance column='[completion_status]' derivation='None' name='[none:completion_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[enrolment_id]' derivation='None' name='[none:enrolment_id:nk]' pivot='key' type='nominal' />
+            <column caption='Quiz Score' datatype='real' name='[quiz_score]' role='measure' type='quantitative' />
+            <column-instance column='[quiz_score]' derivation='Sum' name='[sum:quiz_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:quiz_score:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:quiz_score:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:quiz_score:qk]</rows>
+        <cols>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</cols>
+      </table>
+      <simple-id uuid='{0C72C9E0-C03C-4917-9C81-2F290D0D1CF6}' />
+    </worksheet>
+    <worksheet name='Quiz Score vs Completion Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q09_learner_activity_cleaned' name='federated.0yi2jn007c1rgh133fgfw155lo9q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yi2jn007c1rgh133fgfw155lo9q'>
+            <column datatype='integer' name='[Quiz Score (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[quiz_score]' peg='0' size='5.44' />
+            </column>
+            <column-instance column='[progress_percent]' derivation='Avg' name='[avg:progress_percent:qk]' pivot='key' type='quantitative' />
+            <column caption='Completion Status' datatype='string' name='[completion_status]' role='dimension' type='nominal' />
+            <column caption='Course Length Weeks' datatype='integer' name='[course_length_weeks]' role='measure' type='quantitative' />
+            <column-instance column='[Quiz Score (bin)]' derivation='None' name='[none:Quiz Score (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[completion_status]' derivation='None' name='[none:completion_status:nk]' pivot='key' type='nominal' />
+            <column caption='Progress Percent' datatype='real' name='[progress_percent]' role='measure' type='quantitative' />
+            <column caption='Quiz Score' datatype='real' name='[quiz_score]' role='measure' type='quantitative' />
+            <column-instance column='[course_length_weeks]' derivation='Sum' name='[sum:course_length_weeks:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]' />
+              <color column='[federated.0yi2jn007c1rgh133fgfw155lo9q].[avg:progress_percent:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='14.547999382019043' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</rows>
+        <cols>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:Quiz Score (bin):qk]</cols>
+      </table>
+      <simple-id uuid='{5682313A-D2F0-4924-82A4-97DF5E149022}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Online course Completion '>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98448' id='27' param='vert' type-v2='layout-flow' w='99034' x='483' y='776'>
+            <zone h='4850' id='28' type-v2='title' w='99034' x='483' y='776'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93598' id='25' param='vert' type-v2='layout-flow' w='99034' x='483' y='5626'>
+              <zone h='93598' id='23' param='vert' type-v2='layout-flow' w='99034' x='483' y='5626'>
+                <zone h='93598' id='21' param='vert' type-v2='layout-flow' w='99034' x='483' y='5626'>
+                  <zone h='93598' id='19' param='vert' type-v2='layout-flow' w='99034' x='483' y='5626'>
+                    <zone h='93598' id='17' param='vert' type-v2='layout-flow' w='99034' x='483' y='5626'>
+                      <zone h='93598' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='5626'>
+                        <zone h='93598' id='5' type-v2='layout-basic' w='88774' x='483' y='5626'>
+                          <zone h='32924' id='3' name='Average Progress by Status' w='31841' x='57416' y='66300'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='32924' id='9' name='Completion Status distribution' w='28467' x='28949' y='66300'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='32924' id='10' name='Login Frequency vs Progress Percent' w='28466' x='483' y='66300'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='29784' id='11' name='Histogram of Quiz Scores' w='88774' x='483' y='36516'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='30890' id='12' name='Quiz Score Distribution by Completion Status' w='44386' x='483' y='5626'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='30890' id='13' name='Quiz Score vs Completion Status' w='44388' x='44869' y='5626'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                        <zone fixed-size='170' h='93598' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='10260' x='89257' y='5626'>
+                          <zone h='6984' id='8' name='Average Progress by Status' pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' type-v2='color' w='10260' x='89257' y='5626'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='7081' id='14' name='Quiz Score vs Completion Status' pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[avg:progress_percent:qk]' type-v2='color' w='10260' x='89257' y='12610'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='11057' id='15' name='Quiz Score vs Completion Status' pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]' type-v2='size' w='10260' x='89257' y='19691'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98448' id='31' param='vert' type-v2='layout-flow' w='99034' x='483' y='776'>
+                <zone h='4850' id='28' type-v2='title' w='99034' x='483' y='776'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='239' h='30890' id='12' is-fixed='true' name='Quiz Score Distribution by Completion Status' w='44386' x='483' y='5626'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='239' h='30890' id='13' is-fixed='true' name='Quiz Score vs Completion Status' w='44388' x='44869' y='5626'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7081' id='14' name='Quiz Score vs Completion Status' pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[avg:progress_percent:qk]' type-v2='color' w='10260' x='89257' y='12610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11057' id='15' name='Quiz Score vs Completion Status' pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]' type-v2='size' w='10260' x='89257' y='19691'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='230' h='29784' id='11' is-fixed='true' name='Histogram of Quiz Scores' w='88774' x='483' y='36516'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32924' id='10' is-fixed='true' name='Login Frequency vs Progress Percent' w='28466' x='483' y='66300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32924' id='9' is-fixed='true' name='Completion Status distribution' w='28467' x='28949' y='66300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32924' id='3' is-fixed='true' name='Average Progress by Status' w='31841' x='57416' y='66300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6984' id='8' name='Average Progress by Status' pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' type-v2='color' w='10260' x='89257' y='5626'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DC49574E-050E-4849-AE8B-2C11157733B9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Average Progress by Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AD94AEBA-1143-4575-8E0D-A27A85A9EC2A}' />
+    </window>
+    <window class='worksheet' name='Completion Status distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C579A4FD-1896-46C0-9492-AC90681309AB}' />
+    </window>
+    <window class='worksheet' name='Login Frequency vs Progress Percent'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{81A73FA8-7717-4FE3-A15C-0EB6A4E9F8DA}' />
+    </window>
+    <window class='worksheet' name='Histogram of Quiz Scores'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E6C5CE76-DADA-4DAE-9F6D-316E9C84A60D}' />
+    </window>
+    <window class='worksheet' name='Quiz Score Distribution by Completion Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:Quiz Score (bin):qk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D2AA75FD-793D-4809-A691-EEE5CCFC13D5}' />
+    </window>
+    <window class='worksheet' name='Quiz Score vs Completion Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[avg:progress_percent:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[avg:progress_percent:qk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:Quiz Score (bin):qk]</field>
+            <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3D912388-E192-4E3E-9507-006083880DFD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Online course Completion '>
+      <viewpoints>
+        <viewpoint name='Average Progress by Status'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Completion Status distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram of Quiz Scores'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Login Frequency vs Progress Percent'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0116&quot;</value>
+                  <value>6.0</value>
+                  <value>53.899999999999999</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0114&quot;</value>
+                  <value>3.0</value>
+                  <value>62.299999999999997</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0102&quot;</value>
+                  <value>3.0</value>
+                  <value>68.599999999999994</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0101&quot;</value>
+                  <value>6.0</value>
+                  <value>56.899999999999999</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0086&quot;</value>
+                  <value>5.0</value>
+                  <value>57.399999999999999</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0082&quot;</value>
+                  <value>4.0</value>
+                  <value>50.100000000000001</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0067&quot;</value>
+                  <value>8.0</value>
+                  <value>67.400000000000006</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0060&quot;</value>
+                  <value>6.0</value>
+                  <value>74.200000000000003</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0055&quot;</value>
+                  <value>7.0</value>
+                  <value>57.799999999999997</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0049&quot;</value>
+                  <value>9.0</value>
+                  <value>72.5</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0033&quot;</value>
+                  <value>7.0</value>
+                  <value>55.299999999999997</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0028&quot;</value>
+                  <value>5.0</value>
+                  <value>65.700000000000003</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0027&quot;</value>
+                  <value>3.0</value>
+                  <value>38.600000000000001</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0026&quot;</value>
+                  <value>7.0</value>
+                  <value>58.200000000000003</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0021&quot;</value>
+                  <value>9.0</value>
+                  <value>75.700000000000003</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0019&quot;</value>
+                  <value>3.0</value>
+                  <value>53.5</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0006&quot;</value>
+                  <value>6.0</value>
+                  <value>59.700000000000003</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:completion_status:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[none:enrolment_id:nk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:login_frequency:qk]</field>
+                    <field>[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:progress_percent:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Dropped&quot;</value>
+                  <value>&quot;LR0004&quot;</value>
+                  <value>7.0</value>
+                  <value>47.100000000000001</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Quiz Score Distribution by Completion Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quiz Score vs Completion Status'>
+          <highlight field='[federated.0yi2jn007c1rgh133fgfw155lo9q].[sum:course_length_weeks:qk]' type='size'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A261D13C-5BEE-422B-B8D5-771CDA17B9F9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='Average Progress by Status' width='164'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Completion Status distribution' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Histogram of Quiz Scores' width='192'>
+      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
+      OlMQhvnCUwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Login Frequency vs Progress Percent' width='192'>
+      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
+      7MP7AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Online course Completion ' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO29128eV7bo+auqL+fETFGkxKAsKifbsiU5tNt9uu1Op/vgBlzMYB4GGMzr
+      vJ1/YIAZDM7DXFzMuT1zut3t0+52UJaVkyUqkKIkJjFn8gv8cqowD5RoyRJtUvxEUWL9AEFk
+      cdeqVbv22nHttQVN0zR0dJYp4stWQEfnZaIbgM6yRjcAnWWNbgA6y5qnDECR86TTabLZHHMd
+      H6emJhmPJB67otLX218QBdV8hqHRiSeuaapMPJEsiHyd5Y3h+xcuH/uUQaUUmzzFZCzHf/pP
+      /4RZEn5QSGSogy65ghKv4+EVhcuXr1Fds3LBCqrZODfvtFNZVgzAQNcdjp88g6l0Df/5lx8s
+      WL7O8uYpA0AQ2L7nLRpKLIx0XOPkxTu8vd7H0bNXyGVzbHvjEA3lTv72ty/JI7Jpxxt40bh1
+      9TzjbVex+Cr4+ft7CQ738Nd//4x0XuCXv/oENTHJl0dOoiKw98BPWBmwcPjroyQzOarXbmHf
+      trVcu9pEPjGJ4F/FugoHx765gIgCrqoZ9QIVtfzn/1DC38+3LGY+6bym/OAYoGTVWhIj/dj9
+      FXzyi4/55Bc/4/qlc0SGOhADdfz2t79l3aoKANZv3c1vf/d7YsFBAHxl1fzq17/h3V21nL1y
+      h+MnTvGzX/+ef/r9b7h05iSSyc5HP/+Yjz/+mPY7TYDKuRNf4azayL6tazl6/DSf/Ob3/Orn
+      H2I1STM62Ww2frg90tGZO0+3AI8RGxvAEiij4+YlWoairKooJpWT8a/awsqxc3z2509Z0dBI
+      jVnAbDYDIAjTxVMUp23L7S8ie7+brCbgtBgQkDBIEB7q5Muzt1jbsJqpRBqAFbUb2dywEpAx
+      WlxYjCJy9gW+vc6y5+kWQNNoa73Nt1cu8Onhq7z79lYGBobYtHU7Vkkhm1cJjwxgDlRz4M3d
+      DA8MPFNwPBJieGSYr788xsZtm6gJOLh8u52+jhZEi4/Q+Ahlq9dR4rWRTGW+d7cBIRehrXuQ
+      e60tpHPqzF8mRod40NPL5NgY3b39qPo6ts4CEL7vChGLTNI/NIbZ6mD1qmokUUDJZ7h54xb+
+      8mrcdjN+n4f2u3eYSss0btmKJKfIaCZcdjPBYJBAwM/oQD8Do+NUraqnrMiLpqm0tdxkKiex
+      Y9sWDILK3ZZbaBYPZUVeigJ+gsEQgUAAADmX5vatZnyllXg9bnweFwDDAz2Eo9MzQAaTlfr6
+      Wn5kjK6jMytPGYCOznJCXwjTWdboBqCzrNENQGdZoxuAzrJGNwCdZc1TBqBp2pyd4JYisiwX
+      VJ6mKiiK+uMJF/IMTUWWlRf6DB3gGWX7CQOQMzE+//d/5/ixI1xsuvPU/ZnoOO19Y09dV+UM
+      R774G0cOH+Z6S9tz6xcbe8D/9S//lc8//xt3OvoAlTstrU+l6+7ueeraQEcbkVSOb06dmlV+
+      JjbJ8GQMgPv3WsnJP16w4yNtfNs2/INpIqO9/PXzLzh8+Ctiz7FynU+Pc+HSM96zpxuAXDLM
+      /a7BOUjSuH7pNEePHuHwiXOoyPR0P9sr95Hs5YKmypw4/AUnT5zg65PneGQH0j//8z//86NE
+      l745wfZDP2Pz+jXc+fYyKxtW0909SMDnpqOzi4DfRSyhEhzq5Or1m3T1j1G/eiXpUB8PIiY+
+      ev9tKkoCyNkkZ8+cZWhiilKfjbPnLtDbP8yKqiq6OtrouteMYPdx79Z1Ort78ZdUYDFKJMND
+      aJ46Pjy4j6YL31C+eh3JeBS3w8zZM+foHRzFaRb5w7/9iVRWxmc30Dc0xu27nZQVuTE5PLTd
+      vMpkKMzQZJRyn5XukQh+j432jm6671zi1Lf3sTld2Azg8gXobW/h9p27xHMCTjHFmYvX6elq
+      x+gqwW03k42Oc+bbOwRH+nEXV9Ld2UZxcTGjvZ3IFi9Wo8ix46f4+S8/YU3DGkySyrVL52jr
+      6MLuLWayr5Nb9+7T1tbB+PAg9x8MsLp6BWdPHaent5eUYsLvEukbjFMeMHH+8jUGRyZxmRT+
+      8P/9iWRaZeWqFSSTWWyGPGfOX6J3cJSqqhXcuHKO9q5uhiemWFlZBshcvtrMR//wDzTUVjPS
+      28Yf//wFOdFIicvAuYvf0tM3SLHfwb/+6/9LNJ7G77UzHsngtYt0dA9CJsKlazcJxdJUPPTA
+      fR0Y6bhJ1lPP23u3kR3tJG4OMDk88GQLEEorFNmNgECxy0IknaOndxDQ6O7uQc1E6RuepH7D
+      Fuor/ZRXVQNgDayiwprks7/8mbbeEa6cP8fWfe/wxq5tXL54kV1vHWBLXYBrLV1cPX+a0vot
+      SJEe8vYytqyr5vK3t57UVhCoKPEQSWTo7u5marSPtMHDnl07CJSuoHFzIx8ceodcdJRLtx5w
+      4M09TAz3E8/msbr97H/7AEpkiFAkTN/QJKDQ3d3H2vUb2LnvbTY11DDQ14MsZ7jXNcKBg4cY
+      ftBKLDSGraSWd9/ezt077TPqrNm4lfcOvc2VixdIjPczHM1y+34nLst09gkGA4aHPlDRoXuk
+      bVUcOvQO1y5fYKinj8Z9b+GUc6zb9xb2bIKEqpDMixw4+C7d92/PPOfi+Uts2rodpxwiiJfN
+      jY188N7bCPkkfYNjXLhwmTfeOciGFXZu3h9geCLCgQOHiAdHH0owsmfbWv7++V85e/kmFTV1
+      NDZu5eAbO7E4fKypqyE+3M1I2simxs189OF7GOU4g2NhUHN09w7R0dZGxaoGNq+vL2Dxe/mM
+      jU1QVlYCwIqKUsaDEbq7e540gGKHgeFoBk3TGI+l8ZqnP6qmaWh813eKTg7SNyWypaFq5u9b
+      9uznN7/9DW3N18kpGhazAUEAWRUwGSVMFityLkfxitXUlAfIZTKMDg/QNxJmXX31E8pqqsrQ
+      +BR+pxWAwMr1bK8r5sRXXzARzzyhy7YdOzA85gshiiKCAJIkAQLajP4gIKBpj3d7VCTJBIBB
+      ktA0MJnNDx36vnuGKEkgioiCwK433+TG+RNIFi/Sw0KvyjJ5RUXTNORsFovNBoKEJDDt/GeU
+      EEQDRqM0rQNgkAwP9f1O93QqSc+DTjR7MUUOI3yvv6oiYpREzFYr+Wzuoa4w4x6raZRVr+HX
+      v/kNaqSfWI6ZPu+ty2cJZwQqykpQNQ20afGP3vVRut1vv4shE+aLr47xOo1KystLGRwcAjR6
+      B4YpL/EB3/MG3b3/AEeOHKXVJDKlWDFLNtT0BKfPnMPi8CAYbRT7RJquNaGa3VxuambfjkZy
+      8RDHz1/HZTOxeu1m6kptnD15Eqc3wO4djZw8ehQBgXfee4+OuzkAKtduxT14mngshsNXBoDR
+      6mKs5zaHx9po2LoPm1GgtLSUWGiEO20PMDrc2M0Gyrx2zl26yrrqAB5x2gvV7SvCapRwmiXO
+      nz+LZiumuKSU9Lc3OX1mHIfHh7ukmuDNb2i3SwSKS5AkK+UBE6dOnsDqq8DhcuFTLCBKlBZ7
+      pzPI6may+T4n+lvYse8AksVOLjzCzne+24xzaP8ejhw5itUosved90icPsaJXoG6DdtRQyMY
+      gUBpKQbA//D//u42zp1WWVm/EUGyUFzkoXLdXq7e7sRimjbeEo+dcxeusWtnA0UBDyvqAxw/
+      egwQOPj+e7S1To9nSktLpxXRFC58cwLBbAVXOU6TCadF5vKNFipKirnX142azFJhMVJbWcTJ
+      M+fZu3Mzof7TnAn34vJW0Nt5n8GxEP5A4LWaIiytbaTt1DFOjHXS2TfO//yWk2GzNosvkKZx
+      r/UO9Rs2Y3ydcqEAjPY/4Gb7ID997x2E53TC0+Qcp89f5dDB/YVVTmdO9He14Spfhddu1p3h
+      dJY3ev2us6zRDUBnWaMbwEvkVV91fx34wT3BOs+HpmlcPnOcjMnH/p2bSeVkrGYj6XQGUQCL
+      zUY6mcJiMfPt9dts37IewWimtbmZtXVVTKaNFDlN2Ox2UskkRosVNTHJ0TPXWN/YSCw0SWPj
+      ZlKpNEYxR0d/mPUNqzCIAhoayVQat8v93IP05YRuAC8CTWMqq/HRwZ0c/eoL8rk8itWOMT6B
+      wRlAMlqIySIWQUNQs3z25z9jcheRDk9QGrBw794Q6UyCgN/HZDiD2eHgg30b0NQ8cj5Hc3Mz
+      ZcVeTp86Tln1WsZCSYYHe1lVZGVgIsFUTuCTf/gQi0G3gB9D7wK9CAQBg5zm0vVmTCYDsiZi
+      d7jYsKaWtes2gKYSj8WxO12YzRYEVIqKyygvKyIva1isNpS8jNVmo27NWhxWE7Is4/N7GR0L
+      Uep3MdjTjaesArcngMWgYtDy3HswQHFlNXJsnGS2sE6BrysFnQZ9JErQ296Z/r0gCGiaNhMm
+      BiAVHGA072Z1mfthWpVHy7kaIAoCqqo+cQ+AqqoIoggP0z+Sq6rq9HMeSvn+83Rmp+AGoGe+
+      zquEPgbQWaZo9HU/0McAOvNH1TSOXXtAW3/wZavy/Kh5ZMGsG4DO/Ikls/zr0dt8ean9xxMv
+      VQQjajaujwF05o+maXQOhQm4rPjdtpetznOjaZreAujMn7ys8tWlDpraR162KgtCEAR9EKwz
+      f/KyQudQCKfN9LJVWTDLrgs0HkmQyytUFrn09YoFkM7mMRokDNLS/dZzYcm3AH19fTQ1NRVM
+      3umbvaQzGT7cs+aJ7YgLYd26daxfv74gsnQWl3kZgJJLcb2lnd3bNtF2/z4muwdRTpHMC2xY
+      1/BCFKyurqa6urpg8k71fU0uOMQ//OJjrGZjweQuddrb2xkbezqkzfOgqCqfnb3P6nIvO9dW
+      FEQmwMqVK6mpqSmYvLkwLwOQTDb8HgeynMTpqUTJRdAkG0WSQlrTMKsq6sN/S5UPd9cyNihh
+      lISCB9FaypSUlOB2uwsiS1E1KtsnqV29goaGwhVYu91e8G8iSdIPdnXnZQC5dJLgZBCPx0s8
+      Oo7BbEdUkgRlgWJBQBBFBEFY0mOAC3cGmBof4b9o09Eqlgter7eg8v7jT3fj9/txOBw/nngJ
+      My8DMFnt7N27F4Cihye5POLJQCJLFwFB95NfIKqqcenOAOvqBLasWUYG8Div6gxKdZmHoBZF
+      0s9Vem7iqSxfX+lkaEpmy5qqH79hCbPkZ4EKzd2eCeLBEHlZRTIt3a7aUsZlN/O//noXKyvL
+      X7YqC2bZlQCbxYjZZEB8RVuwpUA6J/PFpQ4utDw78O6rxLIzgGQ6RyabR1nCM1VLnXgyS9dQ
+      iLu9Ey9blQUzqwEouRQnvj5BZ/+rb+WPs3fDCrbUlS2rGaCCIwi8Lu3nrGOA+EQfg8NBJrRW
+      6leuXEydniAcDjM4OJfY+HOjr7uDRDRES8sdpAKtBJeUlHwXn3MZkM7mkRWNeCr3slVZMLMa
+      gNXpZfWGerY1vtwlfrPZjM/nK5i89bVV5JVKvF5vwfxYrFZrQeS8KhgNIqIoYDa9+q3orAYg
+      GsyMDT6gSVM5+OauxdTphfIqrFW8CHp6epicnCyIrFQ2T61fICDFuHbtWkFkAlRUVFBZWVkw
+      eXNhVgPIZ5MYzHai0ehi6vMU8Xicnu7CHefT2zOErKiUWLIFawFWVlcXzM3gReHxeDAaC+P7
+      lMrmadwo4LSZKC8vXNfP6XQWTNZc+cF1AIPRVDCPyedF0zQUpXBHNQiahqaqqKqCUqD2YCn7
+      Pr0IHnnQq+qr357OPguUTbFmy27KAq7F1OeFoz31g85yZlYDsPkrGLx7jaz6mi4Wvy7zeC+D
+      16jyeGbp1jSVb5taEeQkwyMv12U4m80SDocLJi+djJFXVMLhSOGmQV+BKdCJiYmC7QdIpXN0
+      d4/hsBhxS6mCyASoXrly0cdSs1bvifAwgrOSCim/mPo8RUVFRUGnQb/6P46RjIzyv/wPh7Ca
+      C9O6mc3mgsh5kWiqilqgsZSiKKiKgqKIBZMJ0/GGFptnlgBBEHn3w5+TV0VU+TlOfi4gRqOx
+      YLMXABvrKgmOqvh9nld+P+t8sDsc+Pz+gshSppLc7W2hpMjHoT2FkQlgsy1+iJVZq8DUWCd/
+      OteJz2HiVz//6WLq9EL59dvr6XlgKFj351WhqqqKqqrCuC73jU2RN97F4CyjsbGxIDJfFs+s
+      AjVNI4OFLevrsFksi63TC+V//+wqfzjeQk5+nU7BXVzcdjMWk4FSn/1lq7JgZu8ECwaiwTFc
+      3mc0cZrG6MgwJpsTQcmQzMGK8pIXqGbheOJgaZ3n4lHI99dhMmiWMYCAx+fH7Z6gq7cXdm55
+      4u+aKhMMhahyewmGkxjRyGnFSKq65M+9SqbzZLIy+byCYZl1gwrFzMJfgRcpXwTiw33qszFr
+      C6ApecbHx/H6i2YOenhMKqtr6+nt68VsNPOoLniUZilviv/Z3npGBgxYLUZ9U8xzkpdVFFUl
+      lZWX9LeeC7OsA2icPXuGfE5kKtJL7+g6VpU/3hUSCAfHKSmrxKjlSMsCpocnlMDS3i/8izfX
+      cO+egvSKf7j50tLSUjC3cllRMSaHyE9mOXKkcNPkdXV1NDS8mPhSs/HsFkBTiaVk3nrnHc6c
+      vfi9wj89TVpZVT3z+9J2A3uSc7f7GOwbZd26dUvaUAvN2rVrqaurK4gsRdUYkQM0VAXYs75w
+      3puFnO6eK7PEBtWIhSa4/6CP1fXrKfLOLfTFi4gNWujQiOeb+0hmcnywq65gXSA9NOKry7IL
+      jhtNZMgrKn6XdVm1ADrPZtkZgI7O4+glVWdZoxuAzrJGNwCdZY1uADrzJpOT+d/+62k+O3vv
+      ZauyYHQD0Jk3mqaRzubJ5pe2G8Rc0GeBdJ4LVdUQhKW96j8XXtMNvzovmpcdLaRQ6FW1zrJG
+      NwCdZY1uADrLGt0AdJY1CzaAwb5u2joLF7tTR2cxWaABKMiaEa9RJF0YfXR0FpUFToOKZFIx
+      4jIUFUYfHZ1FZcELYZqmomnT+4D1hTCdV42CrQRrmob6MCrEq746uBTQ87EwCILwgxVywVaC
+      H3+Q/uEWxqM6Sc/HhTGXur2gfRVBEF7qR9NUhd7ubsLRxA+mm4qEyMnTsW1UOUs2/+QBF7lE
+      lGTu5Tl6vex8fEQ4OEFvb99MXs2VaDSCsgTODJlLPr5WvkDBsSG8pVU4DTna2zuwuzykoxMk
+      MwpmmwOX1UAskcZkNuLKy0QiEcyCwhQuiiwK8YyMz2UjODJMUUMj9tfgELiFEEumWVlVTnff
+      A9LRNL5iH8lEAqfTQywVx+l0Ew8FMdicSEoaVbJiMaiMTYbYtHkbr0LuvVajVYMkks5kSESn
+      cBWVkU0lMNucOGx2bBYjsgYBp4VUTiYSmkQ0mjEbjfh8PsLhEJIA4ViSyvISPXwigAa5TBpR
+      EnF5S8lns1StKCE4FqaorJxEfAqLzY2SzxAKh0HTSGVliv3el635nCmoO/TLR2NseBCL0082
+      GcHuKcIgaDMDyv6+HlzeInxuJ5JBZHRkjEBJGVPhIG6nnVA0RZHXzmQoSkl5OaZlFD79WcSn
+      wkwlc1SWF5PNyhgllZHxEE6DwHA8RV3NCu4332PVmrVo+SRpWcBmFIin85SVlvAqOIy+Zgag
+      ozM/lncVp7Ps0Q1AZ1mjG4DOskY3AJ1ljW4AOsuaJwxguOc+U5npnzs7O9FUlZbW1ifv0DSi
+      sdiiKKcpeU4c/pKWth5getX27DcnOHb0CMOT0afSR8cH6B2LPC1HVbh87hsOHz7Mg8HxF663
+      zqvDEwYw0nOf6MNTUbu6HiAIAhVl5WiqTOvtG9zv6iUyOcwf//gnWtu60DSV9tZm7tzvQtM0
+      5Fyam03XaevsQVEVQqEw3Z1tpNJpmm820dbVh6bB+OgQt29cZ2B4lFtN1xkNfleYJ0cH+PZa
+      E8lMnt62W/SHUnhc04ex3bh0lpUbdvH+++9y6cxJZDlLaCoOqASDIawuL36HjcHeLm7dukVn
+      Tz8A4923wFfHRz/9KSVeO5qq0NbazIP+YVQlT/PN63T2DqJpGsFgkKHeLmLpPH1dbdxubUPV
+      NMITI1y71sRUMrM4X0ZnUXiqC3Tu5OHpmnJgDFC5fv06A61XiBqKcdlMWGwOPG4PRX4fbU0X
+      SVsC2JUQ1+72cPzwYcpramlrvkE+n+YP/89/YyoDWj5LSWU1Y5036AsmOXXyBCtr6zlx5Ctq
+      6uq5duUiAPlUmIvX77NhzSpOnjqNw+nC5/Pjdk4bwHAkQ02pB1EyUeq1EIuEudnaBShcu36T
+      6Hg37f1BXB4fWipM/8PWILCigZH7lzl84gyS0cy3508hOotxWIxcPnMSX2UdkZ4WeiYSfP6n
+      /07veIzEcBu9ESizZbh8+wFnz19kzZo68lndAF4nnjKAt9/7iI8++ojaqtKZa5VrtyFPdHC9
+      6RaixYHH66W02M9IMMG62gpW1q0nOjGAaHFRFvDhdEwX2DWbd7Jt01pG+x9w595dxiaCpLN5
+      vEWl+Dweyisr8Xo8GA3TS4bpeJDiitU43H7MooLL7cHrD+BxTR/QYRY1svL0ul06q8zc930s
+      RhiJwcE902fYGiwufv2Pv2f/zvUcOXqKSEqmdmUZpSXFJPJQWexh7ZpVDI8GKV+1hjd3byM0
+      OkIoNErncBS7EbZtXseVK1cZGNa7UK8TTzjDSQYjj5znDAbDzP+hyXEwWlHSQXKqSC4R5vrt
+      Vjauq+Ho4ZOY1TgNOw4S6bnF10eO0tc7xJsHhZkjb+LRKUTJgiQZEEXhCdmP/+/wVzFx8Ssu
+      poYwOotAEJAec0fYsXUDX/z9S4pdEkmDF4fdzkR/B+eVMImciiCISKLA53/5FEd5HTda7rGz
+      cT2R8QEu3riHwyJRUlZOuUPm+MnT+APF1JT7OXn6HMnwBO/89BOaxrsAqN2wibunvkWw+3G6
+      nYz2D+Jx2QmFnh5j6Ly6zNkVIptJIxpMGA0SmqqSlxVMJiP5XBYVCbPJQHfHfQSjmWs3WvjH
+      33zynT+ZppHOZLBYrPyYl6+mKqQzOaw26zP90RQ5TyaT5srVJg4cPIAq50A0YDT8sO/h9GYd
+      ZgxKVRQQRERRePhuZoyGJxtETVVRNQ1JktA0lVQ6i81qWRKuyjqFoaC+QJlkjIHhMSqqarBb
+      Fv/AMx2d+aI7w+ksa/SFMJ1lTUEMQFHmtn3w0cb5xXjWUr1f07SXrsNSuH8hHY9C5uGitgCP
+      wqYsVMarfH8heNnvsBTyYKE8ege9C6SzrNENQGdZM6+oEJqmkc1kMJktyPkcosGIYZnvm9WZ
+      P5duP+DWg4WtqIsC/E8/34nFYlmQnHkZQD6TZDIUIZXKIOdySCYLa+pXL0gBneVH73iMc3dG
+      FiRDEgX+x58tPPjQrAaQTQT58ovzrNq6lu3r1k0nNplJJRIUl/pJxCXkfAxVVWdCIv4Yj9Is
+      ZBClqiqyLL+y9z+SsazzoECD6E9PNRNNPZ8ejyKFzGoA+VSMaHSK9gf9MwaQCI2Tx4iqmcmm
+      xzBanTNBcSXpx8MgPfrwc0k7G7Isz/gOvYr3P8r45ZwHP+oPM0dud08yGFxYYP5Z38JgNFO9
+      cRN7t2+YueYqrmRD8fTPfq97QQ/W0VkKzDqCNVgcJIMDXL/96p8GrqMzG7MaQGpqDNXiJTgx
+      upj66OgsKrMagMXpx6hmcbk9i6mPjs6iMqsBZKbGKW/Yion8Yuqjo7OozGIAGpaiGlKDLVg8
+      JYurkY7OIvJMA9BUlYuXrxEOh+nv6VpsnXR0Fo1nT4MKIhYhi2P1ZoxqapFV0tFZPJ5pAIIg
+      sHf/uyiagKosbNVTR2cpM+tCWHKsg0/PdVLqtfGzn7y3mDrp6Cwazx4DaBqKwcHeHZsxLmTJ
+      W0dniTPrNGgynWXgQTsWu3Mx9dHRWVRmHQMUF5fgGBijb2AA9u5YbL10liDBcJSr9wYXfIj3
+      ZOSHj7FdTGbt32iqQjQaxeP16aeW6wAwMZXkvx27u2A5NcX2AmhTGGYdA1y6dJF8Lk8qMkbv
+      aHix9dLRWRRmXQmeiiaoXFGBarCxqty/uFrp6CwSs4wBRH72i08IhqfY1Lj1ib/lcjlMJhOp
+      ZByDyYbJ+CqcB66j82ye2QKoSoIjn33K/YEQ4xPBmetKLsW1m7dR5QwDA6P09vYumqI6Oi+C
+      Z7cAop1db+yhY3iKTO67nV+SyUZJwIuq5rA5fCj5uL4n+DllvIp5sNCofkuRWadBrUaNaEph
+      svkW9TWVAOTSSZLJJOGYjJwNY7S59D3B8+RV3hMsiq9fCJxZc8HuK8OsDuIq/u6kGJPVzpbG
+      LQAUB3wvXjsdnRfM7OsAGux4421ycX0KVOf1ZRYD0Lh/4yJ3wyb8DgsflJY+O5mOzivOLJ06
+      gYZN2zEpaYzmhYWe09FZyszaBVKycTKqAbfTsZj66LwA8vk8/+dnl0hmpmd+NO35YlM5LK/f
+      ms+sBmByFOG1djIViy+mPjovAE3TuNsXJpJcWICDpeTDUyhmndcSjRbWrFlDJKifi6vz+jKr
+      AWiqTPu9VspWrFpMfXR0FpVZDSARHABnGWNDuruDzuvLrAbgCKzAlI9RXFq+mPro6Cwqs8QF
+      Urhw9Tbvvf8eSjq22Drp6Cwaz24BBBGTkuTrr78mJ1oXWSUdncVjVme4Nw59uNi66OgsOq+f
+      e5+Ozjx4Lp9aTVPp7uzA5PBSVaH7Cb1IrrQ8YGD8yXHYfIMUGCU9oMFsPJcBKPkEZnsxclYf
+      IL9omtpHOdMyvCAZbpsRUbeBZ/JcBiCKJmLRYUSpMFHjItE4x6/NLQr1D9V+W+vLaKguK4hO
+      CyWdTvPFxbanrk9vBJt7DR6JL+wQOJ0f5vkMwGCmrnYVYoHCJiZSWf58rnPBcrxOy5IxgLys
+      FOSdXkf/m6WEoC1kcyrM7AmeS4326FHfT5vO5mjtmZzT836oBagudVPs/WHvVVVVF7S1b673
+      y7LMra5n+1HNpw9vNxtIZp/cvzvvMYBBRABysvpc939fl4UGSrOZJFI55bnvBxAAi1kinX0+
+      OY/eYcEGMN+Hapq2KAVwqd6v5wEzFebzGlEh83BRDUBHZ6mxKLHPNVVhaHAAk0eh2aYAABGi
+      SURBVN2DpKTJKBKV5fM7e2x8ZJCsZsRjMxJL5ygrLUWax9RGeHKMqWSOihI/A0OjrKxZhckw
+      9xokGYswPhmmbEUlE8NjeIuKcDls83oHJZdkLJzGKskkshpVlfMbr2iqwuDwGF6nlWgyQ0lp
+      KUZp7u8Qi4SIpXMU+dwMDI6wYmUNFtPcN7lkUwkmQhECxUUERydw+v14nPMZo2gM9Pbg8peS
+      jgURLS5KAt553T8xOoxqsGEkT0YRqCgtnsf9EI2EiMUTuLx+JsdGF2khTBApKSkhHJwgmsih
+      phPzPnvSV1RCcirM6OQkoijOe1rPZrOTTsTpHxylqqqE4eG5jTkeYbHaEMkRHh0mlJIxGI3z
+      U0DT6B8YIR6bIhJLIWRTZOcngdHhQcJTMSYmJxFEcV4VAMDEw7ybHBujsqqc0ZH57fWIhCfJ
+      KQJiPkEwkZl3aJXYWD/hLAhinlRWIhkNM5/uh6pk6e0fwyCJTE5OYniO0DIujw81n2NqcoLS
+      qqrFMQBNyfOgp5+6utVoqoqqzrfXpdHX/YCq1XWsrKpGzCUIxedXfCSjGYdZIpuXURQFhPm9
+      uoaIz+MmpVjYUL+C/p6eed2v5FJk8yqRqSiaqqGqGvMpvpqqkEhlSMWjlFZUYRWyjIWS89Kh
+      sqoaKZ8kFE0jKwrz0wB8ReVUFFnoGUmzrr6awb75usqLBIqKmRgdfs5yAG6Pj3BwguqaWmIT
+      4+Tmeb8qZ8kLZqwGAVmRF2cMoMhZ+vuGsDjd2I2QVSWK59X0qQz29aOKJtwOM9FklhWV5Yjz
+      GERNjo+SzmmUl/gYGp2kckUlhnnUoPGpEMFInLLyUkaHRwiUVuK0mebxDoCmkUylUfJpUnko
+      LZp/0OFkMomazxKKpqiqqphXHsQiQSKJLJVlRQwNj1JeuWJeXahMKs7IeIiK8jLGRobxFJfj
+      ts8jaIKmMToyiM1dhJyKIpjs+DzzOIBF0whNjqMaLAhymqwiUV5WPC8zzmdTqKIFk6gyODSk
+      D4J1lje6M5zOskY3AJ1ljW4AOq8NvR2tnDl/hfzDwbWmyPQNDM78Xc4kOH3yBANjoZlr+hmo
+      Oq8FmpKntXOQPevLOHXyDDVr1pEKjqAAoz13UZzVrHKmCOWM7LCJnDh2jFU1VboB6LwmCAL5
+      fI5kKo2kZhkdmyA+OY5kNGJUFN7YW4eWjrODQb7+6mtKVzWSj43rs0A6rwsaobFhbtxqZt22
+      3QSHBylfsQJBUxgZHMBfXkOxy8Sdex00bNjERH8n7pIVugHoLG/0QbDOskY3AJ1ljW4AOssa
+      3QB0ljW6Aegsa3QD0FnW6Aag86M82oO7tHk+HZ8wgI7bFxmfwx4LVcnTevfuM/+WmRrmX/7l
+      /+bTTz+lZzg4b4VeNK3fnuUP//ZHPv/8b4yGEy/4aRp///S/8+e/fMbXx06jFKAQ9ff3z/ue
+      yaFu/v7FVxw5fpJ0bv6nvUdH2vn27tPPfaRLIjRC98BcdthpXD13kqNHj3Di7FU0ZPr7h56Z
+      bv7vqXLi+CnSU2N09D+5003OJRgaCT11R0tL85OuELHQOJaHETiUbIKz56+A0cY7b+8jMtrH
+      jdZOJIuTd9/chcVqJx0Z49LN+2hKjg3b36Dc70DJp1i9cQ8fvLUJgAddnQRHB1m5YQdDHXeI
+      Z2R27NmHkApz+UYLomDkrf17GRgep66migcPuqiuquDqlWuoBiv79u6i9cYVwvE0VncRe7Zt
+      pOnKRaJZjZqKUoqrVuMwyDwYmKR+dRWdHR3U1tcTmxgia3LT2XydjCyy7+392IwSkakEP/n4
+      VxSZ83x14hrrG6pIT01gK60jPtJFMJpk/dY9lLiMnDl7DkEQWLftTZLhYRKhMdwr1hEZbGcq
+      mWXr7jdIjD6gvW+UkspVVPkMXLvdgStQyu6tG6Y/i8nFP/7yE7qavqF9JEl2qIWpZI6tu/cR
+      HB5AzUSQbeWYc5N0D02yYcsuoiOdTIRi1G7cjjo1woOhMbI5mX17tvPpH//IhsatvLH/AB77
+      HDbkaCoXrt7iF7/8FZIooGkK3148SzyjsHPfWwQHOugfDSIrKhaDiGKw8faujZw+fxlNVand
+      sB2vpqFqGvHQKDdaO3F4AlS4Dfzx07+y+81D7N1SiyEvkIpOcvl6MxaHjzd2b6XpynniaRlX
+      UQU7Nq8FFIYmE/zqVx8D0Nd+mz/97Rv2H3qPtSs83LrXjcnuZvPqUv7tj3+kcese9u9qYEpx
+      U+4T6O2NYBXi3OsdpqSihk1rVqFpGl13bzEwEWY8ksBoNmOWFCYGH9DS3o+/fAVivJtTl/t5
+      5713cFslyETJWUqw2R2zd4EunDnLjrcOsK3ey6UbnVz4toX333uffCICmkJnVzfpyCiSbyVv
+      v7mNu3fuzdx77cIpPv30U/rHpzh36gjFqzchTfWSs5Wze0sDl6/e5MyFy7xz8F0sWppMPktn
+      97TFd3R20vztJVZu3EmNT6Cla5TewTHeOXCQ8PgQQ+23EHw1HHpnP8UeE1eu36G3rZm8YTqM
+      eyo0xGAoxa3mVkz5CKNxgf3738TyaAO8mufW9escP3aCFatquXn5DJqrkjJznIm8k0OHDnD9
+      0nmunDvNxl372VTtYzCU4NrFUxj9NRQJk4Q0H2/u3c6Fcxdpbr3Ppi07WFtbxe1bzdRt2Mz2
+      TWtm8iIeHufqlcs0dUzgVYYIa17e2L2FSxcu09p0iRge6lc4udcd5L1DhwjYZXpGkuzdt5eb
+      Vy8x0N3Jmm17WVNqZWBKY2PjZj768IO5FX4ANYNods3sHx5qu4mxpJ4Db+3i4vmL9PX0sm3v
+      foRMnMa9+1HjITKZFEnNzqF3D9HSdGVG1MUrTezZu5fkeC+20lVsbmzkwJu7kONB+kbDnLtw
+      hbcOHKTIEKNjJMbgWIgDBw8yPvRo+6iBDXUVfPbZX7jW3E51wzoaG7fxxs5GPMWVrK9fxYOb
+      NxGLKmhsbOSnH7xDLjLCYDCBpqbp6hrk9p27bNqynXV1KwGQU5O0Dac4dPAARW4bcjpCz+AE
+      t5tbWd+4lU0Nq2lYv4FtO/ayfWMDd29cYkp1sr62ks6OztkNIKsK2M0SNpebXDKO0WQCtO/t
+      4xSwWqwP99d+d33XW+/yu9/9jpUlHsqq61lVUUQmGaf7QTvN93uoXbUCyWjG+L0tiY/6cIlY
+      lLY7txmMyJQHHJgtVkRBQBAglUzhcrsAcBbXkJ8aoGNoioYVAQA2NG6hvaWJnGjDU1TFW1tX
+      cfyrz+kZjU4/RDSyactW3vvpx2xduxJXUSUb6leSS6ewOV2AhCRBTgG71YSqqqCBt2Ql62or
+      ySQT9Pd20XTrLvUNdXzwkw/pa2vm8Mnz7D/0AYmxXv7y9yMz7+TwFrF9x05+90+/x5RP0NvT
+      xY3m+9TVr8bsLmL7xjpUOYPJYgcBNDlLf28PTTdusXJVLYJowGw2IQgCj3pQ8+pJSRaUTBzl
+      YT8+ncnicNgRjRbQ8oiSAYMkYjCaMIgigjD9Jac3vIsYHgusGw1PcLOpCYPN/zCixvcUESWM
+      ooDLaSOZzmKxWB/G/5n5wjRs2slvf/uPjPXeR9VAeyjjwqljRNIKfrcTle+uP1Y6AHj/w5/S
+      33GHwyfOAaBmEtg8gafy5NAHP2Gsp40vjp5CQJgpWyZXETs21X+n8uM3uXzF3L78DacvXmPP
+      jo0c/voox07fZOfuRupXlnD02An6hsdBEAkEfBitTjwOM6JoxO9zT+e3yYb/sehsRYHpglmx
+      Zit+Yx45l0NWNKqK3Rw7eYr7XX1gtEFigtOnT4PRzva9+8gmY+QyaUCYkREIFFG7aTs9ty5y
+      5twFMnmVTbWlpET3zP5eg82HlJygdv1mMokwrfc6EU1WHA/373oDRdgsJqSHQZUCD2V7Vqwl
+      NXiH48ePsqJ2A3v27OD00cNcuXkHBGEmXWDVZsrtKnI+hyyr3LvTTDyTx+N20d1xn/FIHK/X
+      M/P+paWlGI1GBAH8NZuocGgo+Rx5WSMQKJr+KNYiXIYEZ8+eYzJlZu3qYmRZJpuX8fgDGAWw
+      ODw4LAbqK4s5/s1ZYqm5bgcX2bdjA4cPH+PkqdOU1zfSdeM8x44cY+3m7fj8ASQBfP4AogC+
+      wPTv3e2tnDl1nOo1jRgsdjwOK3t27ySeSpPOZhAAuwRXrrcgmG14nTY2ranh6LETNHVF2FgT
+      eOK7TZPj2JdfcvbsWZxFlYiCBaMSpamlDa/HzcjQACll2ke/yGnhzPmr2Etr6Gu5yNmz13AF
+      PNxvbSaeyuF5WAmavFVkR1s5e+YsgtmOaLTiczvouNdKOJHG4/FgshaRDHfR2tH7mC4QKArM
+      1RlOo6XpCmOhOBnNxM9/cmCOmf/jXP7mOBv3f4BrnlFGAHLpGMeOnOSND36G32EumE4Ak8O9
+      3LrbSSQY4r2Pf4PPtow8x1NBjjX18ZP921+2Ji8c3RtUZ1mjrwPoLGsKagDzWTCZ7+LKq5R2
+      qeSDzo9T8BZgPh9eVee+KKMocw+D/aqlfVH5sByZb4WyjEZ2Oq8ymqZy5vhhrMU17NzUgKIJ
+      GEQB+WGFYDQYyMsyqDGa74Zo3FiNZJS419pOZakb1VaE0yRiMhnI56dju0aGu+dnAJoq09nd
+      R33tagZ6uzE7fYhyimQOalZWvpAXX+qomkY2m8dsNiIK0/PNsWQGTVNxO6aDtybTWVKZHHar
+      GbvVTDaXJ5pIYzIacDusaEA4mkRWFLxOG0ajgXQmRySexGQwkFcUREGgyDsdRjCWTJPJ5nHY
+      LNgs8wzP+IqiZibImco4sHU9X/7tr2QUAy6LwPhECLfDiMtXQgYTZpOMHNf4tztX8RcFGOof
+      ZP+udQxG2klOhfH6PUQSGbzFq2isss7PAFRVRVZklHwCwegmFY8AEmZUMpqG8eFpMXNp0h81
+      U3NtrlRVRZblH084j7SpTB5FUXDOMb6lqqrkcnlkVcVkmC7cwakkZpNENJEm4LGTSGcRAE1V
+      iSXS2K0mEuksAbed4FQCs1EiOJVAEgWiiTRmo4SsKAiChtdpJRxL4nfbCUUTlPpdTETiqKqG
+      rGlMxVPYLEYy2Rw+17S82UK8C4KA9BzRk5cqotlHcvIst+7YpuOhiiI2l481Hj/FfiNdfWGy
+      aha3y0kmnSEZj7N6/SaUVBwASZLQFA2D0cj6TQ2Mj06havM8IENVFdra26ldVcXgUARVzSAg
+      IGoaVQ31GOZxcoeqqmiaNuePJMvynMNxzyVtIpVF1VQENFQN3HOI9Z/L54nEUljM0yvEXped
+      8XCMYq+TiUicEp+LRCqDomooioLJaMRuNRGcSmCQRBRVJeBxMjQewWYxEU9lKPW7EASIxFIY
+      DBJGg4TDaiESS07736QyWM1GFEXFYbPgsJoIx1IYDRKqpuF3//CRUIVgoUciFVIPTQMBDQ0B
+      8TFPguHOFkwVGymyT5e9R6fQzByFJAgoqjqzAPpQ4vxaACWfw+1yk8pCwGfDYClGVHNkZDDy
+      1ML4kkYUBeS8BppGVlZQokncDivSD0RLVhSVXF4BcqSzefKygtloIDiVwGmbbkXsVjOpTA5R
+      YLpgx1P43HYURZ0utKqGzWIinc1NuyBIEpqmIkkS2ZyMoqhkczIGScJhMWGzmIgl0oiiONPd
+      KfI6ycsKRsPi1PCqqi6J1uQ7twrhqYjQFfWbn/j9USX8uOFKT1XMBT4jbD5nN821BdA0jUQ6
+      Sz4v43HZ5xQOfK6tRSqTJZvLIysaHqeNqXhqpp/9LNKZLOFYClEUURSFimIvk5E4xT7XUzpn
+      c3kS6Rwuu4VYMk3A4ySeypDK5Eilc5T4XcRTGdA0ZEXFbjXjsJmZCMcpC7ifkCsrCgICkiTO
+      vNujsUY8mcbnsmOzFnYl/HEURVkSBvAiWPILYZlsHkVRMRklovFUQWXbLGbsFjOapj3sh/9w
+      +ukaW8RokNCY7raYTc82NIHpAbKsfHeCZiyRRhQEVFUlOBUnnkzjcdrwOK1MRuL0j4bIywqT
+      kTgWs/Gx50pPtEyqqpLK5JiKp3A5rASjL3pfw+vL/w+VEgYUvt+S8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Quiz Score Distribution by Completion Status' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='127' name='Quiz Score vs Completion Status' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
